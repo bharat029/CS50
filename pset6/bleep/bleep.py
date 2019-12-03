@@ -5,7 +5,7 @@ from sys import argv
 def main():
     if not len(argv) == 2:
         print("Usage: python bleep.py dictionary")
-        return 1
+        exit(1)
 
     banned_words = None
     with open(argv[1], 'r') as file:
